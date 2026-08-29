@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferme Rêve d'Enfance | Domaine Privatisé entre Campagne & Océan</title>
+  <meta name="description" content="Location de vacances 100% privatisée à Tnine Chtouka, entre Casablanca et El Jadida. 2 suites familiales, piscine privée 10x5m, tente caïdale, animaux de la ferme et ateliers traditionnels à 12 min de la plage.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            olive: {
+              50: '#F4F7F5',
+              100: '#E4EBE6',
+              600: '#3E6153',
+              700: '#2D4A3E',
+              800: '#1E332B',
+              900: '#14221C'
+            },
+            terracotta: {
+              50: '#FAF3EC',
+              100: '#F4E5D4',
+              500: '#DDA15E',
+              600: '#BC6C25',
+              700: '#974E12',
+              800: '#753B0B'
+            },
+            sand: {
+              50: '#FDFBF7',
+              100: '#F7F3EA',
+              200: '#EFE8D7',
+              300: '#DFD4BD'
+            },
+            ocean: {
+              500: '#2A9D8F',
+              600: '#21867A',
+              700: '#1A6B61'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#FDFBF7] text-[#1C2826] font-sans antialiased selection:bg-terracotta-600 selection:text-white">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="bg-olive-800 text-sand-100 text-xs py-2.5 px-4 border-b border-olive-700/50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 font-medium">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-terracotta-500"></i>
+          Tnine Chtouka &bull; Région Casablanca - El Jadida
+        </span>
+        <span class="hidden md:inline-block text-olive-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-stone-300">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-ocean-500"></i>
+          Domaine 100% Exclusif &bull; Aucun Vis-à-Vis
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+212661234567" class="flex items-center gap-1.5 hover:text-white transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-terracotta-500"></i>
+          <span>+212 6 61 23 45 67</span>
+        </a>
+        <a href="#reservation" class="flex items-center gap-1 text-terracotta-500 font-semibold hover:underline">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>Vérifier les dates</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY NAVIGATION BAR ==================== -->
+  <header id="mainNavbar" class="sticky top-0 z-40 bg-[#FDFBF7]/90 backdrop-blur-md border-b border-sand-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-olive-700 to-olive-900 flex items-center justify-center text-terracotta-500 shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24">
+              <path d="M3 21h18M4 18h16M6 14c0-4 3-7 6-7s6 3 6 7M12 3v4M8 5l2 2M16 5l-2 2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block font-serif-luxury font-bold text-xl tracking-tight text-olive-800 leading-tight">Ferme Rêve d'Enfance</span>
+            <span class="block text-[11px] font-medium tracking-widest uppercase text-terracotta-600">Éco-Domaine &amp; Sérénité</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-olive-800">
+          <a href="#concept" class="hover:text-terracotta-600 transition-colors">L'Expérience</a>
+          <a href="#hebergement" class="hover:text-terracotta-600 transition-colors">Suites</a>
+          <a href="#piscine-tente" class="hover:text-terracotta-600 transition-colors">Piscine &amp; Tente</a>
+          <a href="#la-ferme" class="hover:text-terracotta-600 transition-colors">La Ferme</a>
+          <a href="#ateliers" class="hover:text-terracotta-600 transition-colors">Ateliers</a>
+          <a href="#loisirs" class="hover:text-terracotta-600 transition-colors">Loisirs</a>
+          <a href="#plage" class="hover:text-terracotta-600 transition-colors">Plage</a>
+          <a href="#tarifs" class="hover:text-terracotta-600 transition-colors">Tarifs</a>
+          <a href="#acces" class="hover:text-terracotta-600 transition-colors">Accès</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#reservation" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            <i data-lucide="calendar-check" class="w-4 h-4"></i>
+            <span>Réserver votre séjour</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg text-olive-800 hover:bg-sand-100 focus:outline-none" aria-label="Ouvrir le menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE MENU DRAWER ==================== -->
+  <div id="mobileDrawer" class="fixed inset-y-0 right-0 z-50 w-80 bg-sand-50 shadow-2xl border-l border-sand-200 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col">
+    <div class="p-6 flex justify-between items-center border-b border-sand-200">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-olive-700 text-terracotta-500 flex items-center justify-center">
+          <i data-lucide="trees" class="w-4 h-4"></i>
+        </div>
+        <span class="font-serif-luxury font-bold text-olive-800 text-lg">Menu</span>
+      </div>
+      <button id="closeMobileMenu" class="p-2 text-stone-500 hover:text-stone-800" aria-label="Fermer le menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="p-6 flex-1 overflow-y-auto space-y-4 text-base font-medium text-olive-800">
+      <a href="#concept" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="compass" class="w-5 h-5 text-terracotta-600"></i> L'Expérience
+      </a>
+      <a href="#hebergement" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="bed-double" class="w-5 h-5 text-terracotta-600"></i> Suites Familiales
+      </a>
+      <a href="#piscine-tente" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="waves" class="w-5 h-5 text-terracotta-600"></i> Piscine &amp; Tente Caïdale
+      </a>
+      <a href="#la-ferme" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="sprout" class="w-5 h-5 text-terracotta-600"></i> La Ferme &amp; Animaux
+      </a>
+      <a href="#ateliers" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="chef-hat" class="w-5 h-5 text-terracotta-600"></i> Ateliers &amp; Gastronomie
+      </a>
+      <a href="#loisirs" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="trophy" class="w-5 h-5 text-terracotta-600"></i> Loisirs &amp; Sports
+      </a>
+      <a href="#plage" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="sun-medium" class="w-5 h-5 text-terracotta-600"></i> Plage Sidi Bounaim
+      </a>
+      <a href="#tarifs" class="mobile-nav-link flex items-center gap-3 py-2 border-b border-sand-200/60 hover:text-terracotta-600">
+        <i data-lucide="tag" class="w-5 h-5 text-terracotta-600"></i> Tarifs &amp; Devis
+      </a>
+      <a href="#acces" class="mobile-nav-link flex items-center gap-3 py-2 hover:text-terracotta-600">
+        <i data-lucide="map" class="w-5 h-5 text-terracotta-600"></i> Accès &amp; Contact
+      </a>
+    </div>
+    <div class="p-6 border-t border-sand-200 bg-sand-100/70">
+      <a href="#reservation" class="mobile-nav-link w-full inline-flex justify-center items-center gap-2 py-3 rounded-xl bg-terracotta-600 text-white font-medium text-center shadow-md">
+        <i data-lucide="calendar-check" class="w-4 h-4"></i> Réserver en ligne
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Moroccan ambiance -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=85" alt="Domaine Ferme Rêve d'Enfance" class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000">
+      <!-- Rich dual gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-olive-900 via-olive-900/60 to-black/40"></div>
+      <div class="absolute inset-0 bg-radial-at-c from-transparent via-olive-950/40 to-olive-950/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+      
+      <!-- Top Tag Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sand-100 text-xs sm:text-sm font-medium tracking-wide uppercase mb-6 animate-pulse-subtle">
+        <i data-lucide="sparkles" class="w-4 h-4 text-terracotta-500"></i>
+        <span>Oasis Privative entre Terre &amp; Océan</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-serif-luxury text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-sand-50 max-w-4xl mx-auto leading-tight sm:leading-snug mb-6">
+        Là où la Campagne, l'Océan et les Traditions Marocaines se Rencontrent.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-base sm:text-lg md:text-xl text-sand-200 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+        Un havre de paix 100% privatisé entre Casablanca et El Jadida. Un lieu unique pour ralentir, se retrouver en famille et faire découvrir aux enfants la magie de la vie rurale dans un cadre authentique et raffiné.
+      </p>
+
+      <!-- Key Feature Badges -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mb-12 text-left">
+        <div class="bg-black/30 backdrop-blur-md border border-white/15 p-3.5 rounded-xl flex items-center gap-3">
+          <div class="p-2 rounded-lg bg-terracotta-600/30 text-terracotta-500 shrink-0">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-stone-300">Exclusivité</div>
+            <div class="text-sm font-semibold text-white">Domaine 100% Privatisé</div>
+          </div>
+        </div>
+
+        <div class="bg-black/30 backdrop-blur-md border border-white/15 p-3.5 rounded-xl flex items-center gap-3">
+          <div class="p-2 rounded-lg bg-ocean-500/30 text-ocean-500 shrink-0">
+            <i data-lucide="waves" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-stone-300">Baignade</div>
+            <div class="text-sm font-semibold text-white">Piscine Privée 10x5m</div>
+          </div>
+        </div>
+
+        <div class="bg-black/30 backdrop-blur-md border border-white/15 p-3.5 rounded-xl flex items-center gap-3">
+          <div class="p-2 rounded-lg bg-terracotta-600/30 text-terracotta-500 shrink-0">
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-stone-300">Proximité Mer</div>
+            <div class="text-sm font-semibold text-white">12 min de la Plage</div>
+          </div>
+        </div>
+
+        <div class="bg-black/30 backdrop-blur-md border border-white/15 p-3.5 rounded-xl flex items-center gap-3">
+          <div class="p-2 rounded-lg bg-olive-600/30 text-sand-200 shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-stone-300">Localisation</div>
+            <div class="text-sm font-semibold text-white">Tnine Chtouka</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Date & Guest Booking Bar -->
+      <div class="bg-sand-50 text-olive-900 rounded-2xl p-4 sm:p-5 shadow-2xl max-w-4xl mx-auto border border-sand-200">
+        <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3.5 items-end text-left">
+          <div>
+            <label class="block text-xs font-semibold text-olive-800 mb-1 flex items-center gap-1.5">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-terracotta-600"></i> Date d'arrivée
+            </label>
+            <input type="date" id="quickArrival" class="w-full bg-sand-100 border border-sand-300 rounded-xl px-3.5 py-2 text-sm text-olive-900 focus:ring-2 focus:ring-terracotta-600 focus:outline-none font-medium">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-olive-800 mb-1 flex items-center gap-1.5">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-terracotta-600"></i> Date de départ
+            </label>
+            <input type="date" id="quickDeparture" class="w-full bg-sand-100 border border-sand-300 rounded-xl px-3.5 py-2 text-sm text-olive-900 focus:ring-2 focus:ring-terracotta-600 focus:outline-none font-medium">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-olive-800 mb-1 flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-terracotta-600"></i> Voyageurs
+            </label>
+            <select id="quickGuests" class="w-full bg-sand-100 border border-sand-300 rounded-xl px-3.5 py-2 text-sm text-olive-900 focus:ring-2 focus:ring-terracotta-600 focus:outline-none font-medium">
+              <option value="2">2 personnes</option>
+              <option value="4" selected>4 à 6 personnes</option>
+              <option value="8">8 à 10 personnes</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="button" id="heroCheckBtn" class="w-full py-2.5 px-4 bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+              <i data-lucide="search" class="w-4 h-4"></i>
+              <span>Vérifier</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TRUST & METRICS BAR ==================== -->
+  <section class="bg-sand-100 border-y border-sand-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-2">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-2xl text-olive-900">100% Privatif</div>
+          <p class="text-xs text-stone-600 mt-0.5">Aucun autre client sur place</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-2">
+            <i data-lucide="maximize" class="w-6 h-6"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-2xl text-olive-900">50 m² de Piscine</div>
+          <p class="text-xs text-stone-600 mt-0.5">Bassin 10x5m avec fontaine</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-2">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-2xl text-olive-900">2 Suites</div>
+          <p class="text-xs text-stone-600 mt-0.5">Idéales pour les familles</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-2">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-2xl text-olive-900">12 Minutes</div>
+          <p class="text-xs text-stone-600 mt-0.5">De l'océan (Sidi Bounaim)</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT / CONCEPT ==================== -->
+  <section id="concept" class="py-24 moroccan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Un Concept Chaleureux &amp; Authentique</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 tracking-tight mb-4">L'Esprit Rêve d'Enfance</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+          Un lieu pensé pour ralentir, déconnecter du stress urbain et savourer chaque instant ensemble. Pendant que les enfants s'émerveillent au contact des animaux de la ferme et du potager, les adultes profitent de la sérénité d'un domaine baigné de soleil, entre terre et mer.
+        </p>
+      </div>
+
+      <!-- 3 Key Highlight Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-luxury hover:border-terracotta-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-6">
+              <i data-lucide="feather" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-3">Cadre Paisible &amp; Authentique</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              Niché au cœur de la campagne de Chtouka, le domaine bénéficie d'un air pur vivifié par la brise atlantique, à l'abri de toute nuisance sonore.
+            </p>
+          </div>
+          <ul class="text-xs text-olive-800 space-y-2 pt-4 border-t border-sand-200">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> Calme absolu sans vis-à-vis</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> Jardins arborés et fleuris</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-luxury hover:border-terracotta-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-6">
+              <i data-lucide="smile" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-3">Idéal pour les Familles</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              Des espaces clos et sécurisés où les enfants peuvent courir en toute liberté, nourrir les agneaux, ramasser les œufs et explorer la nature.
+            </p>
+          </div>
+          <ul class="text-xs text-olive-800 space-y-2 pt-4 border-t border-sand-200">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> Équipements bébés et enfants</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> Jeux de plein air et de société</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-luxury hover:border-terracotta-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-6">
+              <i data-lucide="navigation" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-3">Situation Stratégique</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              Situé à Tnine Chtouka, le domaine constitue le parfait point de départ pour rayonner vers la plage de Sidi Bounaim, El Jadida, Azemmour ou Casablanca.
+            </p>
+          </div>
+          <ul class="text-xs text-olive-800 space-y-2 pt-4 border-t border-sand-200">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> 12 min de la plage sauvage</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta-600"></i> 50 min de l'aéroport Mohamed V</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACCOMMODATION: 2 SUITES FAMILIALES ==================== -->
+  <section id="hebergement" class="py-24 bg-white border-y border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Confort &amp; Intimité</span>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900">Deux Suites Familiales Chaleureuses</h2>
+          <div class="w-16 h-1 bg-terracotta-600 rounded-full mt-3"></div>
+        </div>
+        <p class="text-stone-600 max-w-md text-sm">
+          Chaque suite a été conçue pour garantir repos, espace et autonomie à votre famille avec literie de qualité hôtelière et salle de bain privative.
+        </p>
+      </div>
+
+      <!-- Suite Tabs -->
+      <div class="flex gap-3 mb-10 border-b border-sand-200 pb-4">
+        <button class="suite-tab px-6 py-2.5 rounded-full font-semibold text-sm bg-olive-700 text-white shadow-md transition-all" data-target="suite-atlas">
+          Suite Familiale 1 : "Atlas"
+        </button>
+        <button class="suite-tab px-6 py-2.5 rounded-full font-semibold text-sm bg-white text-olive-700 border border-sand-300 transition-all hover:bg-sand-100" data-target="suite-alize">
+          Suite Familiale 2 : "Alizé"
+        </button>
+      </div>
+
+      <!-- Suite 1: Atlas -->
+      <div id="suite-atlas" class="suite-panel grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="img-zoom-container rounded-2xl shadow-luxury h-80 sm:h-96 w-full relative">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85" alt="Chambre Parentale Suite Atlas" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Suite Familiale Atlas - Chambre Parentale King Size">
+            <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+              <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Cliquer pour agrandir
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="img-zoom-container rounded-xl h-36 relative">
+              <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=85" alt="Chambre Enfants 2 Lits" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Seconde Chambre - 2 Lits simples confortables">
+            </div>
+            <div class="img-zoom-container rounded-xl h-36 relative">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=85" alt="Salle de Bain Privative" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Salle de bains privative avec douche à l'italienne moderne">
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-sand-50 rounded-2xl p-8 border border-sand-200 shadow-sm">
+          <div class="inline-block text-xs font-semibold text-terracotta-600 uppercase tracking-wider mb-2">Configuration Idéale</div>
+          <h3 class="font-serif-luxury text-2xl font-bold text-olive-900 mb-4">Suite Atlas (4 à 5 personnes)</h3>
+          <p class="text-stone-600 text-sm mb-6 leading-relaxed">
+            Spacieuse et lumineuse, la Suite Atlas offre une vue apaisante sur la palmeraie et le jardin. Parfaitement agencée pour les parents et les enfants.
+          </p>
+
+          <div class="space-y-3.5 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bed-double" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Chambre Parentale</div>
+                <div class="text-xs text-stone-500">Grand lit double, matelas haute densité, linge pur coton</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bed" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Seconde Chambre</div>
+                <div class="text-xs text-stone-500">2 lits simples confortables pour enfants ou invités</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bath" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Salle de Bains Privative</div>
+                <div class="text-xs text-stone-500">Douche moderne à l'italienne, lavabo et serviettes fournies</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="tv" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Téléviseur Écran Plat</div>
+                <div class="text-xs text-stone-500">Chaînes TNT et connectivité pour vos soirées détente</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="baby" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Option Bébé</div>
+                <div class="text-xs text-stone-500">Lit parapluie ou couffin disponible sur simple demande</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservation" class="w-full inline-flex justify-center items-center gap-2 py-3 bg-olive-800 hover:bg-olive-900 text-white text-sm font-medium rounded-xl transition-all shadow">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Réserver cette suite
+          </a>
+        </div>
+      </div>
+
+      <!-- Suite 2: Alizé -->
+      <div id="suite-alize" class="suite-panel hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="img-zoom-container rounded-2xl shadow-luxury h-80 sm:h-96 w-full relative">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85" alt="Chambre Parentale Suite Alizé" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Suite Familiale Alizé - Ambiance Rurale Chaleureuse">
+            <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+              <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Cliquer pour agrandir
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="img-zoom-container rounded-xl h-36 relative">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=85" alt="Chambre 2 lits Suite Alizé" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Chambre d'enfants Suite Alizé">
+            </div>
+            <div class="img-zoom-container rounded-xl h-36 relative">
+              <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=85" alt="Salle d'eau Suite Alizé" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Salle de bain moderne">
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-sand-50 rounded-2xl p-8 border border-sand-200 shadow-sm">
+          <div class="inline-block text-xs font-semibold text-terracotta-600 uppercase tracking-wider mb-2">Fraîcheur &amp; Sérénité</div>
+          <h3 class="font-serif-luxury text-2xl font-bold text-olive-900 mb-4">Suite Alizé (4 à 5 personnes)</h3>
+          <p class="text-stone-600 text-sm mb-6 leading-relaxed">
+            Orientée vers la brise océanique, la Suite Alizé offre un cadre doux et reposant avec des teintes chaudes inspirées de la terre cuite marocaine.
+          </p>
+
+          <div class="space-y-3.5 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bed-double" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Chambre Parentale Cocooning</div>
+                <div class="text-xs text-stone-500">Lit double de prestige et rangements intégrés</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bed" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Chambre d'Enfants Dédiée</div>
+                <div class="text-xs text-stone-500">2 lits simples confortables avec lampes de lecture</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="bath" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Salle de Bain Séparée</div>
+                <div class="text-xs text-stone-500">Douche spacieuse, eau chaude continue et miroir LED</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="tv" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Téléviseur Écran Plat</div>
+                <div class="text-xs text-stone-500">Équipement multimédia haute résolution</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 bg-olive-700/10 text-olive-700 rounded-lg mt-0.5"><i data-lucide="baby" class="w-4 h-4"></i></div>
+              <div>
+                <div class="text-sm font-semibold text-olive-900">Équipement Nourrisson</div>
+                <div class="text-xs text-stone-500">Lit bébé disponible avec matelas sécurisé</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservation" class="w-full inline-flex justify-center items-center gap-2 py-3 bg-olive-800 hover:bg-olive-900 text-white text-sm font-medium rounded-xl transition-all shadow">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Réserver cette suite
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PRIVATE POOL OASIS (10x5m) ==================== -->
+  <section id="piscine-tente" class="py-24 bg-olive-900 text-white relative overflow-hidden">
+    <!-- Subtle Moroccan background glow -->
+    <div class="absolute inset-0 moroccan-pattern-dark opacity-30"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-ocean-500/20 text-ocean-400 border border-ocean-500/30 text-xs font-semibold uppercase tracking-wider mb-4">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          Exclusivité Totale &bull; Aucun Vis-à-Vis
+        </div>
+        <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-sand-50 mb-4">
+          Une Piscine Privée d'Exception (10x5m)
+        </h2>
+        <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+          Réservée exclusivement à votre famille durant tout votre séjour. Profitez d'une eau limpide, d'un mur d'eau avec fontaine apaisante et de bains de soleil sous le ciel bleu de Chtouka.
+        </p>
+      </div>
+
+      <!-- Interactive Day / Night Switcher Bar -->
+      <div class="flex justify-center mb-8">
+        <div class="bg-white/10 backdrop-blur-md p-1.5 rounded-full border border-white/20 flex gap-2">
+          <button id="poolDayBtn" class="flex items-center gap-2 px-5 py-2 rounded-full font-semibold text-xs transition-all bg-white text-[#1E332B] shadow-md">
+            <i data-lucide="sun" class="w-4 h-4 text-amber-500"></i>
+            <span>Ambiance Jour</span>
+          </button>
+          <button id="poolNightBtn" class="flex items-center gap-2 px-5 py-2 rounded-full font-semibold text-xs transition-all bg-white/20 text-stone-300 hover:text-white">
+            <i data-lucide="moon" class="w-4 h-4 text-cyan-300"></i>
+            <span>Ambiance Nuit Féerique</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pool Image Visualizer -->
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[420px] sm:h-[520px] mb-12 border border-white/10">
+        <!-- Day View Image -->
+        <img id="poolDayImg" src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1600&q=85" alt="Piscine de jour à Ferme Rêve d'Enfance" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" data-lightbox-src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1800&q=90" data-lightbox-caption="Piscine Privée 10x5m en journée - Transats et Eau Cristalline">
+
+        <!-- Night View Image -->
+        <img id="poolNightImg" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=85" alt="Piscine de nuit éclairée" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-lightbox-src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=90" data-lightbox-caption="Piscine Privée illuminée de nuit - Ambiance Magique">
+
+        <!-- Info Floating Card -->
+        <div class="absolute bottom-6 left-6 right-6 sm:right-auto sm:max-w-md bg-black/65 backdrop-blur-md p-5 rounded-2xl border border-white/20 text-white">
+          <div class="flex items-center gap-2 text-xs font-bold text-terracotta-500 uppercase tracking-wide mb-1" id="poolModeBadge">
+            Ensoleillement &amp; Eau Cristalline
+          </div>
+          <p class="text-xs sm:text-sm text-stone-200 leading-relaxed" id="poolDescription">
+            Baignée par le soleil généreux de la région de Chtouka, la piscine offre une eau tempérée, un mur d’eau relaxant et des transats confortables pour vos journées de détente.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pool Metrics & Specs Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-ocean-500/20 text-ocean-400 flex items-center justify-center mb-4">
+            <i data-lucide="ruler" class="w-5 h-5"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-xl mb-1">10 m &times; 5 m</div>
+          <p class="text-xs text-stone-300">Dimensions généreuses pour nager et s'amuser en famille en toute sérénité.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-xl mb-1">1,20 m à 2,00 m</div>
+          <p class="text-xs text-stone-300">Profondeur progressive adaptée aux enfants comme aux adultes nageurs.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+            <i data-lucide="droplet" class="w-5 h-5"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-xl mb-1">Fontaine Mur d'Eau</div>
+          <p class="text-xs text-stone-300">Cascade relaxante offrant une atmosphère zen et une eau continuellement oxygénée.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div class="font-serif-luxury font-bold text-xl mb-1">Entretien Quotidien</div>
+          <p class="text-xs text-stone-300">Nettoyage matinal et contrôle rigoureux de l'eau pour une hygiène irréprochable.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== AUTHENTIC CAÏDALE TENT & LOUNGE ==================== -->
+  <section class="py-24 bg-[#FDFBF7] moroccan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta-100 text-terracotta-700 text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="landmark" class="w-3.5 h-3.5"></i>
+            Tradition &amp; Convivialité
+          </div>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 leading-tight">
+            La Grande Tente Traditionnelle Marocaine (Tente Caïdale)
+          </h2>
+          <div class="w-16 h-1 bg-terracotta-600 rounded-full"></div>
+          <p class="text-stone-600 text-base leading-relaxed">
+            Installée majestueusement face à la piscine, cette tente caïdale authentique est le cœur battant du domaine. Un espace de vie d'exception pour savourer le thé à la menthe, partager des déjeuners conviviaux et passer d'inoubliables soirées en famille.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-white p-4 rounded-xl border border-sand-200 shadow-sm flex items-start gap-3">
+              <div class="p-2 bg-olive-700/10 text-olive-700 rounded-lg shrink-0"><i data-lucide="armchair" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-olive-900">Grand Salon Marocain</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Banquettes généreuses et coussins moelleux</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-sand-200 shadow-sm flex items-start gap-3">
+              <div class="p-2 bg-terracotta-600/10 text-terracotta-600 rounded-lg shrink-0"><i data-lucide="utensils" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-olive-900">Espace Salle à Manger</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Grande table ronde pour les repas familiaux</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-sand-200 shadow-sm flex items-start gap-3">
+              <div class="p-2 bg-ocean-500/10 text-ocean-600 rounded-lg shrink-0"><i data-lucide="speaker" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-olive-900">Ambiance Sonore "Woofer"</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Enceinte amplifiée Bluetooth haute qualité</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-sand-200 shadow-sm flex items-start gap-3">
+              <div class="p-2 bg-olive-700/10 text-olive-700 rounded-lg shrink-0"><i data-lucide="projector" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-olive-900">Vidéoprojecteur Cinéma</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Disponible sur demande pour soirées films</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative">
+            <div class="img-zoom-container rounded-3xl shadow-2xl overflow-hidden h-[460px] border-4 border-white">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85" alt="Tente Caïdale Salon Marocain" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="La Tente Caïdale Impériale et son Grand Salon Traditionnel">
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-olive-800 text-white p-5 rounded-2xl shadow-xl hidden sm:flex items-center gap-4 max-w-xs border border-olive-700">
+              <div class="p-3 bg-terracotta-600 rounded-xl text-white">
+                <i data-lucide="coffee" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-sm font-bold">Thé de Bienvenue</div>
+                <div class="text-xs text-sand-200">Servi à votre arrivée selon la pure tradition marocaine</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EQUIPPED KITCHEN & SELF-CATERING ==================== -->
+  <section class="py-24 bg-white border-y border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Autonomie Gourmande</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Une Cuisine Complète en Libre Accès</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Conçue pour vous permettre de préparer vos repas en toute liberté comme à la maison. Électroménagers modernes, ustensiles traditionnels à tajine et espace barbecue extérieur.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <div class="img-zoom-container rounded-2xl shadow-luxury h-72 w-full">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85" alt="Cuisine équipée" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Cuisine moderne entièrement équipée">
+          </div>
+          <div class="img-zoom-container rounded-2xl shadow-luxury h-64 w-full">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85" alt="Espace Barbecue Extérieur" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Espace Barbecue en pierre au feu de bois">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+              <i data-lucide="flame" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Cuisson &amp; Four</h4>
+            <p class="text-xs text-stone-600">Cuisinière à gaz 4 feux, four de cuisson performant et hotte aspirante.</p>
+          </div>
+
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-3">
+              <i data-lucide="snowflake" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Réfrigération XL</h4>
+            <p class="text-xs text-stone-600">Grand réfrigérateur et congélateur spacieux pour conserver toutes vos provisions.</p>
+          </div>
+
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-3">
+              <i data-lucide="sparkle" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Lave-Vaisselle &amp; Linge</h4>
+            <p class="text-xs text-stone-600">Lave-vaisselle moderne et machine à laver pour un séjour sans contraintes.</p>
+          </div>
+
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+              <i data-lucide="coffee" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Petit-Déjeuner &amp; Boissons</h4>
+            <p class="text-xs text-stone-600">Cafetière électrique, blender pour smoothies et bouilloire inox.</p>
+          </div>
+
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-3">
+              <i data-lucide="soup" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Batterie Complète</h4>
+            <p class="text-xs text-stone-600">Plats à tajines en terre cuite, casseroles, poêles, vaisselle et couverts complets.</p>
+          </div>
+
+          <div class="bg-sand-50 p-5 rounded-2xl border border-sand-200">
+            <div class="w-10 h-10 rounded-xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+              <i data-lucide="utensils-crossed" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-olive-900 text-sm mb-1">Barbecue Extérieur</h4>
+            <p class="text-xs text-stone-600">Grillades au charbon de bois pour de délicieux déjeuners au bord de la piscine.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FARM IMMERSION & ANIMALS ==================== -->
+  <section id="la-ferme" class="py-24 moroccan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Nature &amp; Découverte</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Immersion au Cœur de la Vie Rurale</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Rêve d'Enfance est une véritable ferme vivante. Les enfants découvrent les animaux, participent aux soins et se reconnectent avec émerveillement aux rythmes de la terre.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Animal 1: Horse -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-sand-200 shadow-luxury group">
+          <div class="img-zoom-container h-52 relative">
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=85" alt="Cheval de la ferme" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Le Cheval de la Ferme - Élégance et contact bienveillant">
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md p-1.5 rounded-lg text-olive-700">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif-luxury font-bold text-lg text-olive-900 mb-1">Le Cheval de la Ferme</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Majestueux et docile, il fait la joie des petits et des grands pour des instants d'observation privilégiés.
+            </p>
+          </div>
+        </div>
+
+        <!-- Animal 2: Lambs -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-sand-200 shadow-luxury group">
+          <div class="img-zoom-container h-52 relative">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=800&q=85" alt="Agneaux de la ferme" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Les Agneaux - Les préférés des enfants">
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md p-1.5 rounded-lg text-terracotta-600">
+              <i data-lucide="heart" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif-luxury font-bold text-lg text-olive-900 mb-1">Les Agneaux Doux</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Les véritables mascottes de la ferme. Des moments de tendresse inoubliables pour les tout-petits.
+            </p>
+          </div>
+        </div>
+
+        <!-- Animal 3: Chicken coop -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-sand-200 shadow-luxury group">
+          <div class="img-zoom-container h-52 relative">
+            <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=85" alt="Poulailler de la ferme" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Le Poulailler traditionnel et la cueillette des œufs frais">
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md p-1.5 rounded-lg text-amber-600">
+              <i data-lucide="egg" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif-luxury font-bold text-lg text-olive-900 mb-1">Le Poulailler Vivant</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Découverte des poules fermières et initiation des enfants au ramassage matinal des œufs frais bio.
+            </p>
+          </div>
+        </div>
+
+        <!-- Animal 4: Organic Garden -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-sand-200 shadow-luxury group">
+          <div class="img-zoom-container h-52 relative">
+            <img src="https://images.unsplash.com/photo-1592417817098-8f3d6ef23048?auto=format&fit=crop&w=800&q=85" alt="Potager bio" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1592417817098-8f3d6ef23048?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="Le Potager Biologique et herbes aromatiques fraîches">
+            <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md p-1.5 rounded-lg text-emerald-600">
+              <i data-lucide="sprout" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif-luxury font-bold text-lg text-olive-900 mb-1">Le Potager Biologique</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Menthe fraîche parfumée, verveine, romarin et légumes de saison cultivés selon les méthodes traditionnelles.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== AUTHENTIC WORKSHOPS ==================== -->
+  <section id="ateliers" class="py-24 bg-white border-y border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Transmission &amp; Savoir-Faire</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Ateliers &amp; Expériences Traditionnelles</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Enrichissez votre séjour avec nos ateliers sur-mesure (sur réservation). Une immersion vivante dans les gestes ancestraux de l'art de vivre marocain.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Workshop 1 -->
+        <div class="bg-sand-50 rounded-2xl overflow-hidden border border-sand-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="img-zoom-container h-52">
+              <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=85" alt="Atelier Plantation Botanique" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs font-bold text-olive-700 mb-2">
+                <i data-lucide="leaf" class="w-4 h-4"></i>
+                <span>Nature &amp; Éveil Botanique</span>
+              </div>
+              <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Atelier Plantation &amp; Botanique</h3>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                Découverte des herbes aromatiques de notre potager (menthe marocaine, verveine citronnée, romarin). Les enfants apprennent à planter leurs propres pousses.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-sand-200/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Durée : ~1 heure</span>
+            <span class="font-bold text-terracotta-600">Sur demande</span>
+          </div>
+        </div>
+
+        <!-- Workshop 2 -->
+        <div class="bg-sand-50 rounded-2xl overflow-hidden border border-sand-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="img-zoom-container h-52">
+              <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=85" alt="Cérémonie du Thé Marocain" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs font-bold text-terracotta-600 mb-2">
+                <i data-lucide="flame" class="w-4 h-4"></i>
+                <span>Tradition &amp; Rituel</span>
+              </div>
+              <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Cérémonie du Thé Marocain</h3>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                Apprenez l'art ancestral du thé à la menthe : le choix des feuilles, l'art du dosage, le geste en cascade pour faire mousser le thé et l'étiquette de service.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-sand-200/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Dégustation incluse</span>
+            <span class="font-bold text-terracotta-600">Sur demande</span>
+          </div>
+        </div>
+
+        <!-- Workshop 3 -->
+        <div class="bg-sand-50 rounded-2xl overflow-hidden border border-sand-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="img-zoom-container h-52">
+              <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=85" alt="Atelier Tajine Marocain" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs font-bold text-amber-700 mb-2">
+                <i data-lucide="chef-hat" class="w-4 h-4"></i>
+                <span>Gastronomie du Terroir</span>
+              </div>
+              <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Atelier Tajine au Feu de Bois</h3>
+              <p class="text-xs text-stone-600 leading-relaxed mb-4">
+                Initiez-vous à la préparation d'un authentique tajine mijoté aux légumes du potager et aux épices marocaines, suivi d'un déjeuner partagé sous la tente.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-sand-200/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Repas complet</span>
+            <span class="font-bold text-terracotta-600">Sur demande</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LEISURE, SPORTS & GAMES ==================== -->
+  <section id="loisirs" class="py-24 moroccan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Divertissements &amp; Plein Air</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Espace Loisirs, Sports &amp; Jeux</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Petits et grands disposent d'un large éventail d'équipements sportifs et ludiques en libre accès pour rythmer vos journées entre rires et vitalité.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-3">
+            <i data-lucide="circle-dot" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Terrain Basketball</h4>
+          <p class="text-xs text-stone-500">Panier et ballons fournis pour des matchs en famille.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+            <i data-lucide="table" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Table Ping-Pong</h4>
+          <p class="text-xs text-stone-500">Table extérieure pro, raquettes et balles de qualité.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-3">
+            <i data-lucide="disc" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Terrain de Pétanque</h4>
+          <p class="text-xs text-stone-500">Boulodrome aménagé pour les tournois de fin d'après-midi.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-3">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Jeu de Fléchettes</h4>
+          <p class="text-xs text-stone-500">Cible de précision pour petits et grands joueurs.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Tapis de Course</h4>
+          <p class="text-xs text-stone-500">Espace fitness pour garder la forme en plein air.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-amber-600/10 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="dices" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Jeux de Société</h4>
+          <p class="text-xs text-stone-500">Large sélection pour des soirées conviviales sous la tente.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-3">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Jeux de Piscine</h4>
+          <p class="text-xs text-stone-500">Bouées, frites flottantes et accessoires gonflables.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-sand-200 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-3">
+            <i data-lucide="sun" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif-luxury font-bold text-base text-olive-900 mb-1">Espaces Détente</h4>
+          <p class="text-xs text-stone-500">Coins ombragés, hamacs et transats pour la sieste.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SURROUNDINGS & BEACH ==================== -->
+  <section id="plage" class="py-24 bg-olive-800 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-ocean-500/20 text-ocean-400 border border-ocean-500/30 text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="waves" class="w-3.5 h-3.5"></i>
+            Évasion Océanique à Proximité
+          </div>
+          <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-sand-50 leading-tight">
+            La Plage de Sidi Bounaim à Seulement 12 Minutes
+          </h2>
+          <div class="w-16 h-1 bg-terracotta-500 rounded-full"></div>
+          <p class="text-stone-300 text-base leading-relaxed">
+            Située à seulement <strong>7 km (~12 minutes en voiture)</strong> du domaine, la sublime plage sauvage de Sidi Bounaim vous ouvre les portes de l'Atlantique.
+          </p>
+          <p class="text-stone-300 text-sm leading-relaxed">
+            Profitez du meilleur des deux univers : la quiétude verdoyante et le soleil de la campagne le matin, puis les embruns marins, le sable doré et le coucher de soleil sur l'océan l'après-midi.
+          </p>
+
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="bg-white/10 p-3.5 rounded-xl text-center border border-white/10">
+              <div class="font-serif-luxury font-bold text-xl text-terracotta-500">7 km</div>
+              <div class="text-[11px] text-stone-300">Distance directe</div>
+            </div>
+            <div class="bg-white/10 p-3.5 rounded-xl text-center border border-white/10">
+              <div class="font-serif-luxury font-bold text-xl text-terracotta-500">12 min</div>
+              <div class="text-[11px] text-stone-300">En voiture</div>
+            </div>
+            <div class="bg-white/10 p-3.5 rounded-xl text-center border border-white/10">
+              <div class="font-serif-luxury font-bold text-xl text-terracotta-500">100%</div>
+              <div class="text-[11px] text-stone-300">Nature sauvage</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="img-zoom-container rounded-3xl shadow-2xl overflow-hidden h-[420px] border-4 border-white/20 relative">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Plage Sidi Bounaim Atlantique" class="w-full h-full object-cover" data-lightbox-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=90" data-lightbox-caption="La Côte Atlantique et la Plage Sauvage de Sidi Bounaim à 12 minutes de la ferme">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="text-xs uppercase tracking-widest text-terracotta-400 font-bold block mb-1">Côte Atlantique</span>
+              <h4 class="font-serif-luxury text-xl font-bold">Plage Sidi Bounaim</h4>
+              <p class="text-xs text-stone-200 mt-1">Air vivifiant, promenades les pieds dans l'eau et sessions baignade</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES & CONCIERGE ==================== -->
+  <section class="py-24 bg-white border-b border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Tranquillité d'Esprit</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Services Inclus &amp; Conciergerie</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-olive-700/10 text-olive-700 flex items-center justify-center mb-5">
+            <i data-lucide="wifi" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Wi-Fi Haut Débit</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Connexion Internet stable et rapide disponible dans les suites, la tente et autour de la piscine pour rester connecté en toute simplicité.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-terracotta-600/10 text-terracotta-600 flex items-center justify-center mb-5">
+            <i data-lucide="car" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Navette Aéroport Mohamed V</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Service de transfert privé aller/retour organisé sur réservation depuis et vers l'aéroport de Casablanca (avec supplément).
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200 text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-ocean-500/10 text-ocean-600 flex items-center justify-center mb-5">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif-luxury text-xl font-bold text-olive-900 mb-2">Entretien Quotidien</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Piscine nettoyée chaque matin et extérieurs soignés pour vous garantir un environnement toujours impeccable.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TRANSPARENT PRICING & LIVE ESTIMATOR ==================== -->
+  <section id="tarifs" class="py-24 moroccan-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Transparence &amp; Clarté</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Tarifs Indicatifs &amp; Simulateur en Direct</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Privatisation intégrale du domaine pour vous et vos proches (piscine privée, 2 suites familiales, tente caïdale, cuisine équipée et activités incluses).
+        </p>
+      </div>
+
+      <!-- Pricing Comparison Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        
+        <!-- High Season Card -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-terracotta-500 shadow-xl relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 right-6 bg-terracotta-600 text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider shadow">
+            Période Très Demandée
+          </div>
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-terracotta-600 uppercase mb-2">
+              <i data-lucide="sun" class="w-4 h-4"></i> Haute Saison
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-olive-900 mb-1">Été &amp; Vacances Scolaires</h3>
+            <p class="text-xs text-stone-500 mb-6">Juillet, Août et périodes de fêtes</p>
+
+            <div class="mb-6 pb-6 border-b border-sand-200">
+              <span class="text-xs text-stone-500 block">À partir de</span>
+              <div class="flex items-baseline gap-1">
+                <span class="font-serif-luxury text-4xl font-bold text-olive-900">2 000</span>
+                <span class="text-lg font-bold text-olive-800">DH</span>
+                <span class="text-xs text-stone-500">/ nuit</span>
+              </div>
+              <span class="text-xs text-stone-500 block mt-1">Privatisation totale du domaine complet</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-stone-600 mb-8">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Accès exclusif aux 2 suites familiales</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Piscine 10x5m 100% privative sans vis-à-vis</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Tente caïdale, salon marocain et terrasse</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Cuisine équipée &amp; barbecue en pierre</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Accès libre aux animaux et aux terrains de loisirs</li>
+            </ul>
+          </div>
+
+          <a href="#reservation" class="w-full py-3 bg-terracotta-600 hover:bg-terracotta-700 text-white text-center font-bold text-sm rounded-xl shadow transition-all">
+            Réserver en Haute Saison
+          </a>
+        </div>
+
+        <!-- Low Season Card -->
+        <div class="bg-white rounded-3xl p-8 border border-sand-300 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-bold text-olive-700 uppercase mb-2">
+              <i data-lucide="cloud-sun" class="w-4 h-4"></i> Basse &amp; Moyenne Saison
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-olive-900 mb-1">Séjours Ressourçants</h3>
+            <p class="text-xs text-stone-500 mb-6">Septembre à Juin (hors vacances)</p>
+
+            <div class="mb-6 pb-6 border-b border-sand-200">
+              <span class="text-xs text-stone-500 block">Environ</span>
+              <div class="flex items-baseline gap-1">
+                <span class="font-serif-luxury text-4xl font-bold text-olive-900">1 000 - 1 200</span>
+                <span class="text-lg font-bold text-olive-800">DH</span>
+                <span class="text-xs text-stone-500">/ nuit</span>
+              </div>
+              <span class="text-xs text-stone-500 block mt-1">Privatisation totale du domaine complet</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-stone-600 mb-8">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Accès exclusif aux 2 suites familiales</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Piscine 10x5m 100% privative</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Tente caïdale &amp; cuisine autonome</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Sports, jeux et animaux de la ferme</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Calme absolu pour télétravail ou week-end détente</li>
+            </ul>
+          </div>
+
+          <a href="#reservation" class="w-full py-3 bg-olive-800 hover:bg-olive-900 text-white text-center font-bold text-sm rounded-xl shadow transition-all">
+            Réserver Hors Saison
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Interactive Real-Time Price Estimator Box -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-sand-300 shadow-2xl max-w-4xl mx-auto">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 pb-6 border-b border-sand-200">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-terracotta-600 uppercase mb-1">
+              <i data-lucide="calculator" class="w-4 h-4"></i> Calculateur Instantané
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-olive-900">Estimez le Tarif de Votre Séjour</h3>
+          </div>
+          
+          <!-- Currency Switcher -->
+          <div class="flex items-center gap-2 text-xs font-semibold">
+            <span class="text-stone-500">Devise :</span>
+            <select id="calcCurrency" class="bg-sand-100 border border-sand-300 rounded-lg px-3 py-1.5 text-olive-900 font-bold focus:outline-none focus:ring-2 focus:ring-terracotta-600">
+              <option value="MAD" selected>MAD (DH)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="USD">USD ($)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Controls -->
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Saison du séjour</label>
+              <select id="calcSeason" class="w-full bg-sand-50 border border-sand-300 rounded-xl px-4 py-2.5 text-sm font-medium text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600">
+                <option value="high" selected>Haute Saison (Été / Fêtes) - 2 000 DH / nuit</option>
+                <option value="medium">Moyenne Saison - 1 200 DH / nuit</option>
+                <option value="low">Basse Saison - 1 100 DH / nuit</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Nombre de nuits</label>
+              <input type="number" id="calcNights" min="1" max="60" value="2" class="w-full bg-sand-50 border border-sand-300 rounded-xl px-4 py-2.5 text-sm font-medium text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-2">Options &amp; Services complémentaires</label>
+              <div class="space-y-2.5 text-xs text-stone-700">
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input type="checkbox" id="optShuttle" class="rounded text-terracotta-600 focus:ring-terracotta-500 w-4 h-4">
+                  <span>Navette Privée Aéroport Mohamed V (+500 DH)</span>
+                </label>
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input type="checkbox" id="optTajine" class="rounded text-terracotta-600 focus:ring-terracotta-500 w-4 h-4">
+                  <span>Atelier Cuisine Tajine au Feu de Bois (+350 DH)</span>
+                </label>
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input type="checkbox" id="optTea" class="rounded text-terracotta-600 focus:ring-terracotta-500 w-4 h-4">
+                  <span>Cérémonie &amp; Atelier Thé Marocain (+150 DH)</span>
+                </label>
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input type="checkbox" id="optProjector" class="rounded text-terracotta-600 focus:ring-terracotta-500 w-4 h-4">
+                  <span>Mise à disposition Vidéoprojecteur grand écran (+200 DH)</span>
+                </label>
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input type="checkbox" id="optBabyBed" class="rounded text-terracotta-600 focus:ring-terracotta-500 w-4 h-4">
+                  <span>Lit Bébé &amp; Couffin (+100 DH)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Total Display -->
+          <div class="bg-olive-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-olive-700 shadow-lg">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-sand-300 font-bold mb-4">Récapitulatif de l'estimation</div>
+              
+              <div class="space-y-3 text-xs text-sand-200 pb-4 border-b border-olive-700/80">
+                <div class="flex justify-between">
+                  <span>Hébergement (<span id="calcNightsCount">2 nuits</span>) :</span>
+                  <span id="calcBasePrice" class="font-bold text-white">4 000 DH</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Options sélectionnées :</span>
+                  <span id="calcOptionsPrice" class="font-bold text-white">0 DH</span>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <span class="text-xs text-sand-300 block mb-1">Montant Total Estimé</span>
+                <div class="font-serif-luxury text-4xl sm:text-5xl font-bold text-terracotta-500" id="calcTotalPrice">
+                  4 000 DH
+                </div>
+                <span class="text-[11px] text-stone-400 block mt-1">Devise : <span id="calcCurrencyCode">MAD</span> (Tarif indicatif sous réserve de confirmation)</span>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <a href="#reservation" class="w-full inline-flex justify-center items-center gap-2 py-3 bg-terracotta-600 hover:bg-terracotta-700 text-white font-bold text-sm rounded-xl shadow-md transition-all">
+                <i data-lucide="send" class="w-4 h-4"></i> Envoyer ma demande avec ce devis
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING / INQUIRY FORM + WHATSAPP ==================== -->
+  <section id="reservation" class="py-24 bg-white border-y border-sand-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Réservation Directe Sans Intermédiaire</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Réservez Votre Séjour en Toute Simplicité</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Remplissez le formulaire ci-dessous pour transmettre directement votre demande sur WhatsApp ou recevoir un appel de notre équipe pour bloquer vos dates.
+        </p>
+      </div>
+
+      <div class="bg-sand-50 rounded-3xl p-6 sm:p-10 border border-sand-300 shadow-xl">
+        <form id="stayBookingForm" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Nom et Prénom *</label>
+              <input type="text" id="fullName" required placeholder="Ex: Karim Benjelloun" class="w-full bg-white border border-sand-300 rounded-xl px-4 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Numéro de Téléphone / WhatsApp *</label>
+              <input type="tel" id="phoneNum" required placeholder="+212 6..." class="w-full bg-white border border-sand-300 rounded-xl px-4 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Date d'arrivée *</label>
+              <input type="date" id="arrivalDate" required class="w-full bg-white border border-sand-300 rounded-xl px-3.5 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600 font-medium">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Date de départ *</label>
+              <input type="date" id="departureDate" required class="w-full bg-white border border-sand-300 rounded-xl px-3.5 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600 font-medium">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Nombre d'adultes *</label>
+              <select id="adultsCount" class="w-full bg-white border border-sand-300 rounded-xl px-3.5 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600 font-medium">
+                <option value="1">1 Adulte</option>
+                <option value="2" selected>2 Adultes</option>
+                <option value="3">3 Adultes</option>
+                <option value="4">4 Adultes</option>
+                <option value="5">5 Adultes</option>
+                <option value="6">6 Adultes et plus</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-olive-900 mb-1.5">Nombre d'enfants</label>
+              <select id="childrenCount" class="w-full bg-white border border-sand-300 rounded-xl px-3.5 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600 font-medium">
+                <option value="0">Aucun enfant</option>
+                <option value="1">1 Enfant</option>
+                <option value="2" selected>2 Enfants</option>
+                <option value="3">3 Enfants</option>
+                <option value="4">4 Enfants et plus</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-olive-900 mb-2">Options souhaitées (facultatif)</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-stone-700">
+              <label class="flex items-center gap-2 p-2.5 bg-white rounded-xl border border-sand-200 cursor-pointer">
+                <input type="checkbox" id="formOptShuttle" class="rounded text-terracotta-600 focus:ring-terracotta-500">
+                <span>Navette Aéroport Mohammed V</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 bg-white rounded-xl border border-sand-200 cursor-pointer">
+                <input type="checkbox" id="formOptBaby" class="rounded text-terracotta-600 focus:ring-terracotta-500">
+                <span>Lit Bébé / Couffin pour nourrisson</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 bg-white rounded-xl border border-sand-200 cursor-pointer">
+                <input type="checkbox" id="formOptTajine" class="rounded text-terracotta-600 focus:ring-terracotta-500">
+                <span>Atelier Gastronomie &amp; Tajine</span>
+              </label>
+              <label class="flex items-center gap-2.5 p-2.5 bg-white rounded-xl border border-sand-200 cursor-pointer">
+                <input type="checkbox" id="formOptProjector" class="rounded text-terracotta-600 focus:ring-terracotta-500">
+                <span>Vidéoprojecteur grand écran</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-olive-900 mb-1.5">Remarques ou demandes particulières</label>
+            <textarea id="specialNotes" rows="3" placeholder="Précisez ici vos horaires souhaités, heure d'arrivée estimée ou toute autre demande..." class="w-full bg-white border border-sand-300 rounded-xl px-4 py-2.5 text-sm text-olive-900 focus:outline-none focus:ring-2 focus:ring-terracotta-600"></textarea>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-4">
+            <button type="submit" class="flex-1 py-4 px-6 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2.5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.14c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.12 8.12 0 0 1-1.25-4.37c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.22-8.23 8.22zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+              </svg>
+              <span>Envoyer ma Réservation via WhatsApp</span>
+            </button>
+          </div>
+
+          <p class="text-center text-xs text-stone-500">
+            Réponse rapide garantie 7j/7 sous 15 minutes. Aucun paiement préalable n'est requis à cette étape.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION ==================== -->
+  <section class="py-24 moroccan-pattern">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Questions Fréquentes</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900 mb-4">Tout ce que Vous Devez Savoir</h2>
+        <div class="w-16 h-1 bg-terracotta-600 mx-auto rounded-full mb-6"></div>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-2xl border border-sand-300 shadow-sm overflow-hidden">
+          <button class="faq-button w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none">
+            <span class="font-serif-luxury font-bold text-base sm:text-lg text-olive-900">
+              La ferme est-elle totalement privatisée pour notre groupe ?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-terracotta-600 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-sand-100 pt-4">
+            Oui, absolument. Lorsque vous réservez, la totalité du domaine (la piscine privée 10x5m, la tente marocaine caïdale, la cuisine entièrement équipée, les 2 suites familiales et les terrains de loisirs) est 100% réservée à votre famille. Il n'y a aucun autre client sur les lieux.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-2xl border border-sand-300 shadow-sm overflow-hidden">
+          <button class="faq-button w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none">
+            <span class="font-serif-luxury font-bold text-base sm:text-lg text-olive-900">
+              Combien de personnes les deux suites peuvent-elles accueillir ?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-terracotta-600 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-sand-100 pt-4">
+            Les deux suites familiales sont parfaites pour accueillir confortablement une grande famille ou deux couples avec enfants (chambre parentale avec lit double + seconde chambre avec 2 lits simples + lit bébé disponible sur demande pour chaque suite).
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-2xl border border-sand-300 shadow-sm overflow-hidden">
+          <button class="faq-button w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none">
+            <span class="font-serif-luxury font-bold text-base sm:text-lg text-olive-900">
+              À quelle distance se trouve la plage la plus proche ?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-terracotta-600 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-sand-100 pt-4">
+            La superbe plage sauvage de Sidi Bounaim est située à seulement 7 km de la ferme, soit environ 12 minutes de trajet en voiture. La route d'accès est facile et praticable.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-2xl border border-sand-300 shadow-sm overflow-hidden">
+          <button class="faq-button w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none">
+            <span class="font-serif-luxury font-bold text-base sm:text-lg text-olive-900">
+              Pouvons-nous cuisiner sur place en totale autonomie ?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-terracotta-600 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-sand-100 pt-4">
+            Tout à fait. La cuisine mise à votre disposition est entièrement équipée avec des appareils électroménagers modernes (cuisinière à gaz, four, réfrigérateur-congélateur, lave-vaisselle, lave-linge, cafetière, mixeur, vaisselle complète, ustensiles et tajines) ainsi qu'un barbecue extérieur au charbon de bois.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white rounded-2xl border border-sand-300 shadow-sm overflow-hidden">
+          <button class="faq-button w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none">
+            <span class="font-serif-luxury font-bold text-base sm:text-lg text-olive-900">
+              Comment réserver et quelles sont les modalités de paiement ?
+            </span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-terracotta-600 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-sand-100 pt-4">
+            La réservation s'effectue directement par contact téléphonique ou via WhatsApp. Un acompte vous sera demandé pour bloquer fermement vos dates de séjour, et le solde est payable à votre arrivée lors de la remise des clés.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION & INTERACTIVE ROUTE MAP ==================== -->
+  <section id="acces" class="py-24 bg-white border-t border-sand-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-semibold text-terracotta-600 tracking-widest uppercase mb-2 block">Accès &amp; Localisation</span>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-olive-900">
+            Au Cœur de Tnine Chtouka
+          </h2>
+          <div class="w-16 h-1 bg-terracotta-600 rounded-full"></div>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Idéalement située dans la région Casablanca-Settat / El Jadida, la ferme est accessible très facilement par l'autoroute ou les voies rapides régionales.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3 p-3.5 bg-sand-50 rounded-xl border border-sand-200">
+              <div class="p-2 bg-olive-700/10 text-olive-700 rounded-lg"><i data-lucide="plane" class="w-4 h-4"></i></div>
+              <div class="text-xs">
+                <span class="font-bold text-olive-900 block">Aéroport Mohamed V (Casablanca)</span>
+                <span class="text-stone-500">À seulement ~50 minutes de route directe</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 bg-sand-50 rounded-xl border border-sand-200">
+              <div class="p-2 bg-ocean-500/10 text-ocean-600 rounded-lg"><i data-lucide="waves" class="w-4 h-4"></i></div>
+              <div class="text-xs">
+                <span class="font-bold text-olive-900 block">Plage de Sidi Bounaim</span>
+                <span class="text-stone-500">À 7 km (~12 minutes)</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 bg-sand-50 rounded-xl border border-sand-200">
+              <div class="p-2 bg-terracotta-600/10 text-terracotta-600 rounded-lg"><i data-lucide="landmark" class="w-4 h-4"></i></div>
+              <div class="text-xs">
+                <span class="font-bold text-olive-900 block">El Jadida &amp; Azemmour</span>
+                <span class="text-stone-500">À ~30 minutes de trajet</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Tnine+Chtouka+Morocco" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-olive-800 hover:bg-olive-900 text-white rounded-xl text-xs font-semibold shadow transition-all">
+              <i data-lucide="map-pin" class="w-4 h-4"></i> Ouvrir dans Google Maps
+            </a>
+            <a href="https://waze.com/ul?q=Tnine+Chtouka" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-sand-100 hover:bg-sand-200 text-olive-900 rounded-xl text-xs font-semibold border border-sand-300 transition-all">
+              <i data-lucide="navigation" class="w-4 h-4"></i> Itinéraire Waze
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-sand-100 h-96 relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53360.58474272183!2d-8.232371999999999!3d33.3147775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda8bb92ef43c4a1%3A0xb35a09b30b42ca2e!2sTnine%20Chtouka!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte localisation Ferme Rêve d'Enfance">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-olive-900 text-sand-100 pt-16 pb-12 border-t border-olive-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-olive-800">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-olive-700 to-olive-900 flex items-center justify-center text-terracotta-500 border border-olive-600">
+              <i data-lucide="trees" class="w-5 h-5"></i>
+            </div>
+            <span class="font-serif-luxury font-bold text-lg text-white">Ferme Rêve d'Enfance</span>
+          </div>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Domaine 100% privatisé dédié aux familles en quête de calme, d'authenticité marocaine et de moments privilégiés entre campagne et océan.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="font-serif-luxury font-bold text-sm text-white mb-4 uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2.5 text-xs text-stone-300">
+            <li><a href="#concept" class="hover:text-terracotta-500 transition-colors">L'Expérience &amp; Concept</a></li>
+            <li><a href="#hebergement" class="hover:text-terracotta-500 transition-colors">Suites Familiales</a></li>
+            <li><a href="#piscine-tente" class="hover:text-terracotta-500 transition-colors">Piscine Privée 10x5m</a></li>
+            <li><a href="#la-ferme" class="hover:text-terracotta-500 transition-colors">La Ferme &amp; Animaux</a></li>
+            <li><a href="#tarifs" class="hover:text-terracotta-500 transition-colors">Tarifs &amp; Devis</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Details -->
+        <div>
+          <h4 class="font-serif-luxury font-bold text-sm text-white mb-4 uppercase tracking-wider">Contact &amp; Réservations</h4>
+          <ul class="space-y-3 text-xs text-stone-300">
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-terracotta-500 shrink-0"></i>
+              <span>+212 6 61 23 45 67</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Assistance WhatsApp 7j/7</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-terracotta-500 shrink-0"></i>
+              <span>Tnine Chtouka, Région Casablanca / El Jadida</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Exclusivity Guarantee -->
+        <div>
+          <h4 class="font-serif-luxury font-bold text-sm text-white mb-4 uppercase tracking-wider">Garantie Exclusivité</h4>
+          <div class="bg-olive-800/80 p-4 rounded-xl border border-olive-700 space-y-2 text-xs text-stone-300">
+            <div class="flex items-center gap-2 text-emerald-400 font-semibold">
+              <i data-lucide="shield-check" class="w-4 h-4"></i> Séjour 100% Privatisé
+            </div>
+            <p class="text-[11px] leading-relaxed">
+              La garantie d'un séjour intime en toute quiétude, sans aucun partage d'équipements avec d'autres vacanciers.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400">
+        <div>
+          &copy; 2026 Ferme Rêve d'Enfance. Tous droits réservés.
+        </div>
+        <div class="flex gap-4">
+          <span>Authenticité &bull; Famille &bull; Sérénité</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <a href="#" id="floatingWhatsApp" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white shadow-2xl hover:scale-110 transition-all flex items-center justify-center group" aria-label="Contacter sur WhatsApp">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.14c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.12 8.12 0 0 1-1.25-4.37c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.22-8.23 8.22zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+    </svg>
+    <!-- Tooltip badge -->
+    <span class="absolute right-full mr-3 bg-stone-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Réserver directement sur WhatsApp
+    </span>
+  </a>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
+    <div id="lightboxBackdrop" class="absolute inset-0"></div>
+    <div class="relative z-10 max-w-5xl w-full flex flex-col items-center">
+      <div class="relative max-h-[80vh] overflow-hidden rounded-2xl shadow-2xl">
+        <img id="lightboxImg" src="" alt="" class="max-h-[75vh] w-auto object-contain">
+      </div>
+      <div id="lightboxCaption" class="text-sand-100 text-sm font-medium mt-4 text-center"></div>
+      
+      <!-- Close button -->
+      <button id="lightboxClose" class="absolute -top-12 right-0 p-2 text-white/80 hover:text-white focus:outline-none" aria-label="Fermer la vue agrandie">
+        <i data-lucide="x" class="w-7 h-7"></i>
+      </button>
+
+      <!-- Navigation Arrows -->
+      <button id="lightboxPrev" class="absolute left-2 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 text-white hover:bg-black/80 focus:outline-none" aria-label="Photo précédente">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+      <button id="lightboxNext" class="absolute right-2 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 text-white hover:bg-black/80 focus:outline-none" aria-label="Photo suivante">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-olive-dark: #1E332B;
+  --color-olive: #2D4A3E;
+  --color-olive-light: #3E6153;
+  --color-terracotta: #BC6C25;
+  --color-terracotta-dark: #974E12;
+  --color-terracotta-light: #DDA15E;
+  --color-sand-bg: #FDFBF7;
+  --color-sand-card: #F6F2E9;
+  --color-sand-border: #E8DFCE;
+  --color-teal-pool: #2A9D8F;
+  --color-teal-dark: #1E6F65;
+  --color-slate-text: #1C2826;
+  --color-slate-muted: #5C6E67;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-sand-bg);
+  color: var(--color-slate-text);
+}
+
+.font-serif-luxury {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B69E;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #974E12;
+}
+
+/* Custom Glassmorphism */
+.glass-nav {
+  background: rgba(253, 251, 247, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-card-dark {
+  background: rgba(30, 51, 43, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Moroccan Geometric Subtle Background Pattern */
+.moroccan-pattern {
+  background-color: var(--color-sand-bg);
+  background-image: radial-gradient(var(--color-sand-border) 1px, transparent 1px), radial-gradient(var(--color-sand-border) 1px, var(--color-sand-bg) 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.moroccan-pattern-dark {
+  background-color: #1A2E26;
+  background-image: radial-gradient(rgba(221, 161, 94, 0.15) 1.2px, transparent 1.2px);
+  background-size: 30px 30px;
+}
+
+/* Image zoom effect on hover */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Custom shadow styles */
+.shadow-luxury {
+  box-shadow: 0 20px 40px -15px rgba(45, 74, 62, 0.12), 0 0 1px 1px rgba(45, 74, 62, 0.05);
+}
+
+.shadow-luxury-hover:hover {
+  box-shadow: 0 25px 50px -12px rgba(45, 74, 62, 0.2), 0 0 1px 1px rgba(45, 74, 62, 0.08);
+}
+
+/* Accordion */
+.accordion-content {
+  transition: max-height 0.35s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+  overflow: hidden;
+}
+
+/* Lightbox Modal Animation */
+#lightboxModal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#lightboxModal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Pool transition */
+.pool-overlay-active {
+  opacity: 1;
+}
+.pool-overlay-hidden {
+  opacity: 0;
+}

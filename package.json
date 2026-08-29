@@ -1,0 +1,24 @@
+{
+  "name": "ferme-reve-denfance",
+  "version": "1.0.0",
+  "description": "Site web officiel de la Ferme Rêve d'Enfance - Éco-domaine privatisé à Tnine Chtouka",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "pm2:start": "pm2 start server.js --name ferme-reve-denfance",
+    "pm2:stop": "pm2 stop ferme-reve-denfance",
+    "pm2:restart": "pm2 restart ferme-reve-denfance",
+    "pm2:logs": "pm2 logs ferme-reve-denfance"
+  },
+  "keywords": [
+    "ferme",
+    "vacances",
+    "maroc",
+    "piscine",
+    "tnine-chtouka",
+    "casablanca",
+    "el-jadida"
+  ],
+  "author": "Ferme Rêve d'Enfance",
+  "license": "ISC"
+}
