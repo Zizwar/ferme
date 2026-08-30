@@ -32,26 +32,31 @@ const server = http.createServer((req, res) => {
   let filePath = path.join(PUBLIC_DIR, safePath);
 
   fs.stat(filePath, (err, stats) => {
-    if (err || !stats.isFile()) {
-      // If file not found, try serving index.html or 404
-      filePath = path.join(PUBLIC_DIR, 'index.html');
+    if (!err && stats.isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
     }
 
-    const ext = path.extname(filePath).toLowerCase();
-    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-
-    fs.readFile(filePath, (readErr, data) => {
-      if (readErr) {
-        res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
-        res.end('Erreur 500 : Erreur interne du serveur.');
-        return;
+    fs.stat(filePath, (fileErr, fileStats) => {
+      if (fileErr || !fileStats.isFile()) {
+        filePath = path.join(PUBLIC_DIR, 'index.html');
       }
-      res.writeHead(200, {
-        'Content-Type': contentType,
-        'Cache-Control': 'no-cache',
-        'Access-Control-Allow-Origin': '*'
+
+      const ext = path.extname(filePath).toLowerCase();
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+
+      fs.readFile(filePath, (readErr, data) => {
+        if (readErr) {
+          res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.end('Erreur 500 : Erreur interne du serveur.');
+          return;
+        }
+        res.writeHead(200, {
+          'Content-Type': contentType,
+          'Cache-Control': 'no-cache',
+          'Access-Control-Allow-Origin': '*'
+        });
+        res.end(data);
       });
-      res.end(data);
     });
   });
 });

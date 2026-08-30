@@ -1,9 +1,18 @@
 /**
- * Ferme Rêve d'Enfance - Interactive Engine
- * Strictly French Language UI & Accessible Interactions
+ * Ferme Rêve d'Enfance - Multilingual Interactive Engine
+ * Seamless RTL/LTR support, live currency calculator, lightbox & WhatsApp booking
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Detect current language from <html lang="...">
+  const currentLang = document.documentElement.lang || 'fr';
+  const i18n = (window.FERME_I18N && window.FERME_I18N[currentLang]) ? window.FERME_I18N[currentLang] : (window.FERME_I18N ? window.FERME_I18N.fr : {});
+
+  // Save current language to localStorage
+  try {
+    localStorage.setItem('user_preferred_lang', currentLang);
+  } catch (e) {}
+
   // Initialize Lucide Icons
   if (window.lucide) {
     lucide.createIcons();
@@ -69,12 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
       poolDayImg.style.opacity = '1';
       poolNightImg.style.opacity = '0';
 
-      if (poolModeBadge) {
-        poolModeBadge.textContent = 'Ensoleillement & Eau Cristalline';
-      }
-      if (poolDescription) {
-        poolDescription.textContent = 'Baignée par le soleil généreux de la région de Chtouka, la piscine offre une eau tempérée, un mur d’eau relaxant et des transats confortables pour vos journées de détente.';
-      }
+      if (poolModeBadge && i18n.pool) poolModeBadge.textContent = i18n.pool.dayBadge;
+      if (poolDescription && i18n.pool) poolDescription.textContent = i18n.pool.dayDesc;
     });
 
     poolNightBtn.addEventListener('click', () => {
@@ -87,12 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
       poolDayImg.style.opacity = '0';
       poolNightImg.style.opacity = '1';
 
-      if (poolModeBadge) {
-        poolModeBadge.textContent = 'Ambiance Nocturne & Éclairage Féerique';
-      }
-      if (poolDescription) {
-        poolDescription.textContent = 'Dès la tombée de la nuit, les projecteurs subaquatiques et l’éclairage tamisé créent une atmosphère magique pour des baignades sous les étoiles et des dîners au bord de l’eau.';
-      }
+      if (poolModeBadge && i18n.pool) poolModeBadge.textContent = i18n.pool.nightBadge;
+      if (poolDescription && i18n.pool) poolDescription.textContent = i18n.pool.nightDesc;
     });
   }
 
@@ -104,11 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       const target = tab.getAttribute('data-target');
       suiteTabs.forEach((t) => {
-        t.classList.remove('bg-[#2D4A3E]', 'text-white', 'shadow-md');
-        t.classList.add('bg-white', 'text-[#2D4A3E]');
+        t.classList.remove('bg-olive-700', 'bg-[#2D4A3E]', 'text-white', 'shadow-md');
+        t.classList.add('bg-white', 'text-olive-700');
       });
-      tab.classList.remove('bg-white', 'text-[#2D4A3E]');
-      tab.classList.add('bg-[#2D4A3E]', 'text-white', 'shadow-md');
+      tab.classList.remove('bg-white', 'text-olive-700');
+      tab.classList.add('bg-olive-700', 'text-white', 'shadow-md');
 
       suitePanels.forEach((panel) => {
         if (panel.id === target) {
@@ -145,12 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
     USD: 0.10
   };
 
-  const currencySymbols = {
-    MAD: 'DH',
-    EUR: '€',
-    USD: '$'
-  };
-
   function calculatePrice() {
     if (!priceTotalElem) return;
 
@@ -158,7 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nights = Math.max(1, parseInt(nightsInput ? nightsInput.value : '2', 10) || 1);
     const curr = currencySelect ? currencySelect.value : 'MAD';
     const rate = exchangeRates[curr] || 1;
-    const symbol = currencySymbols[curr] || 'DH';
+    const symbol = (i18n.currencySymbol && i18n.currencySymbol[curr]) ? i18n.currencySymbol[curr] : (curr === 'MAD' ? 'DH' : curr);
+    const localeCode = i18n.locale || 'fr-FR';
 
     // Base price per night
     let baseNightRate = season === 'high' ? 2000 : 1200;
@@ -180,10 +176,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const convOptions = Math.round(optionsTotal * rate);
     const convGrandTotal = Math.round(grandTotal * rate);
 
-    if (priceBaseElem) priceBaseElem.textContent = `${convSubtotal.toLocaleString('fr-FR')} ${symbol}`;
-    if (priceNightsElem) priceNightsElem.textContent = `${nights} nuit${nights > 1 ? 's' : ''}`;
-    if (priceOptionsElem) priceOptionsElem.textContent = `${convOptions.toLocaleString('fr-FR')} ${symbol}`;
-    if (priceTotalElem) priceTotalElem.textContent = `${convGrandTotal.toLocaleString('fr-FR')} ${symbol}`;
+    const nightUnit = nights > 1 ? (i18n.nightUnitPlural || 'nuits') : (i18n.nightUnitSingle || 'nuit');
+
+    if (priceBaseElem) priceBaseElem.textContent = `${convSubtotal.toLocaleString(localeCode)} ${symbol}`;
+    if (priceNightsElem) priceNightsElem.textContent = `${nights} ${nightUnit}`;
+    if (priceOptionsElem) priceOptionsElem.textContent = `${convOptions.toLocaleString(localeCode)} ${symbol}`;
+    if (priceTotalElem) priceTotalElem.textContent = `${convGrandTotal.toLocaleString(localeCode)} ${symbol}`;
     if (priceCurrencyElem) priceCurrencyElem.textContent = curr;
   }
 
@@ -203,36 +201,46 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const fullName = document.getElementById('fullName')?.value || 'Client';
-      const phone = document.getElementById('phoneNum')?.value || 'Non renseigné';
-      const arrival = document.getElementById('arrivalDate')?.value || 'Date à convenir';
-      const departure = document.getElementById('departureDate')?.value || 'Date à convenir';
+      const phone = document.getElementById('phoneNum')?.value || '---';
+      const arrival = document.getElementById('arrivalDate')?.value || '---';
+      const departure = document.getElementById('departureDate')?.value || '---';
       const adults = document.getElementById('adultsCount')?.value || '2';
       const children = document.getElementById('childrenCount')?.value || '0';
-      const message = document.getElementById('specialNotes')?.value || 'Aucune remarque particulière';
+      const message = document.getElementById('specialNotes')?.value || (i18n.labels?.noNotes || 'None');
 
       // Selected options
       const selectedOpts = [];
-      if (document.getElementById('formOptShuttle')?.checked) selectedOpts.push('Navette Aéroport Mohammed V');
-      if (document.getElementById('formOptBaby')?.checked) selectedOpts.push('Lit Bébé / Couffin');
-      if (document.getElementById('formOptTajine')?.checked) selectedOpts.push('Atelier Cuisine Tajine');
-      if (document.getElementById('formOptProjector')?.checked) selectedOpts.push('Vidéoprojecteur grand écran');
+      if (document.getElementById('formOptShuttle')?.checked) {
+        selectedOpts.push(currentLang === 'ar' ? 'توصيل مطار محمد الخامس' : (currentLang === 'es' ? 'Traslado Aeropuerto' : (currentLang === 'en' ? 'Airport Shuttle' : 'Navette Aéroport')));
+      }
+      if (document.getElementById('formOptBaby')?.checked) {
+        selectedOpts.push(currentLang === 'ar' ? 'سرير أطفال / مهد' : (currentLang === 'es' ? 'Cuna para bebé' : (currentLang === 'en' ? 'Baby Cot' : 'Lit Bébé')));
+      }
+      if (document.getElementById('formOptTajine')?.checked) {
+        selectedOpts.push(currentLang === 'ar' ? 'ورشة طهي الطاجين المغربي' : (currentLang === 'es' ? 'Taller de Tajín' : (currentLang === 'en' ? 'Tajine Cooking Workshop' : 'Atelier Tajine')));
+      }
+      if (document.getElementById('formOptProjector')?.checked) {
+        selectedOpts.push(currentLang === 'ar' ? 'شاشة عرض سينمائي (بروجكتور)' : (currentLang === 'es' ? 'Proyector de cine' : (currentLang === 'en' ? 'Movie Projector' : 'Vidéoprojecteur')));
+      }
 
-      const optionsStr = selectedOpts.length > 0 ? selectedOpts.join(', ') : 'Aucune option supplémentaire';
+      const optionsStr = selectedOpts.length > 0 ? selectedOpts.join(', ') : (i18n.labels?.noOptions || 'Aucune option');
+
+      const header = i18n.waBookingHeader || "Bonjour Ferme Rêve d'Enfance,";
+      const footer = i18n.waBookingFooter || "Merci de confirmer la disponibilité.";
+      const lbl = i18n.labels || {};
 
       const waText = 
-`Bonjour Ferme Rêve d'Enfance,
+`${header}
 
-Je souhaite effectuer une demande de réservation pour la privatisation de votre domaine :
+- ${lbl.fullName || 'Nom'} : ${fullName}
+- ${lbl.phone || 'Tél'} : ${phone}
+- ${lbl.arrival || 'Arrivée'} : ${arrival}
+- ${lbl.departure || 'Départ'} : ${departure}
+- ${lbl.guests || 'Participants'} : ${adults} ${lbl.adults || 'adultes'}, ${children} ${lbl.children || 'enfants'}
+- ${lbl.options || 'Options'} : ${optionsStr}
+- ${lbl.notes || 'Remarques'} : ${message}
 
-- Nom complet : ${fullName}
-- Téléphone : ${phone}
-- Date d'arrivée : ${arrival}
-- Date de départ : ${departure}
-- Nombre de participants : ${adults} adulte(s), ${children} enfant(s)
-- Options souhaitées : ${optionsStr}
-- Remarques / Demandes particulières : ${message}
-
-Merci de bien vouloir me confirmer la disponibilité et le tarif final.`;
+${footer}`;
 
       const encoded = encodeURIComponent(waText);
       const waUrl = `https://wa.me/212661234567?text=${encoded}`;
@@ -245,7 +253,7 @@ Merci de bien vouloir me confirmer la disponibilité et le tarif final.`;
   if (floatingWaBtn) {
     floatingWaBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const text = encodeURIComponent("Bonjour Ferme Rêve d'Enfance, je souhaiterais obtenir des informations concernant les disponibilités et la privatisation de votre domaine à Tnine Chtouka.");
+      const text = encodeURIComponent(i18n.waGeneral || "Bonjour Ferme Rêve d'Enfance, je souhaiterais des informations sur vos disponibilités.");
       window.open(`https://wa.me/212661234567?text=${text}`, '_blank');
     });
   }
@@ -282,17 +290,20 @@ Merci de bien vouloir me confirmer la disponibilité et le tarif final.`;
   if (mobileMenuToggle && mobileDrawer) {
     mobileMenuToggle.addEventListener('click', () => {
       mobileDrawer.classList.remove('translate-x-full');
+      mobileDrawer.classList.add('translate-x-0');
     });
 
     if (closeMobileMenu) {
       closeMobileMenu.addEventListener('click', () => {
         mobileDrawer.classList.add('translate-x-full');
+        mobileDrawer.classList.remove('translate-x-0');
       });
     }
 
     mobileLinks.forEach((link) => {
       link.addEventListener('click', () => {
         mobileDrawer.classList.add('translate-x-full');
+        mobileDrawer.classList.remove('translate-x-0');
       });
     });
   }
@@ -307,7 +318,7 @@ Merci de bien vouloir me confirmer la disponibilité et le tarif final.`;
   let currentGalleryIndex = 0;
   const galleryList = Array.from(galleryItems).map((item) => ({
     src: item.getAttribute('data-lightbox-src') || item.getAttribute('src'),
-    caption: item.getAttribute('data-lightbox-caption') || item.getAttribute('alt') || 'Ferme Rêve d\'Enfance'
+    caption: item.getAttribute('data-lightbox-caption') || item.getAttribute('alt') || "Ferme Rêve d'Enfance"
   }));
 
   function openLightbox(index) {
