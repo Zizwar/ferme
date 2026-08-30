@@ -189,68 +189,17 @@
           <a href="#acces" class="hover:text-terracotta-600 transition-colors">Location</a>
         </nav>
 
-        <!-- CTA & Language Dropdown -->
+        <!-- CTA Booking Button (Desktop Navbar) -->
         <div class="hidden sm:flex items-center gap-3">
-          
-          <!-- Language Switcher Dropdown (Desktop Navbar) -->
-          <div class="relative lang-dropdown-container">
-            <button type="button" class="lang-dropdown-btn inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-sand-100 hover:bg-sand-200 text-olive-800 text-xs font-semibold border border-sand-300 transition-colors shadow-sm cursor-pointer" aria-label="Select Language">
-              <i data-lucide="languages" class="w-3.5 h-3.5 text-terracotta-600"></i>
-              <span class="text-sm">🇬🇧</span>
-              <span>EN</span>
-              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-stone-500"></i>
-            </button>
-            <div class="lang-dropdown-menu absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-xl border border-sand-200 py-1.5 z-50 text-xs font-medium text-olive-900">
-              
-          <a href="/fr" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇫🇷</span> <span>Français</span>
-          </a>
-          <a href="/ar" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇲🇦</span> <span>العربية</span>
-          </a>
-          <a href="/en" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors font-bold text-terracotta-700 bg-sand-100">
-            <span class="text-base">🇬🇧</span> <span>English</span>
-          </a>
-          <a href="/es" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇪🇸</span> <span>Español</span>
-          </a>
-            </div>
-          </div>
-
           <a href="#reservation" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-terracotta-600 hover:bg-terracotta-700 text-white font-medium text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
             <i data-lucide="calendar-check" class="w-4 h-4"></i>
             <span>Book Your Stay</span>
           </a>
         </div>
 
-        <!-- Mobile Controls (Quick Language Selector + Hamburger Menu) -->
-        <div class="flex items-center gap-2 lg:hidden">
-          
-          <!-- Mobile Header Language Trigger -->
-          <div class="relative lang-dropdown-container">
-            <button type="button" class="lang-dropdown-btn p-2 rounded-lg bg-sand-100 text-olive-900 flex items-center gap-1 text-xs font-bold border border-sand-200 shadow-sm" aria-label="Change language">
-              <span class="text-base">🇬🇧</span>
-              <span>EN</span>
-            </button>
-            <div class="lang-dropdown-menu absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-2xl border border-sand-200 py-1.5 z-50 text-xs font-medium text-olive-900">
-              
-          <a href="/fr" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇫🇷</span> <span>Français</span>
-          </a>
-          <a href="/ar" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇲🇦</span> <span>العربية</span>
-          </a>
-          <a href="/en" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors font-bold text-terracotta-700 bg-sand-100">
-            <span class="text-base">🇬🇧</span> <span>English</span>
-          </a>
-          <a href="/es" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span class="text-base">🇪🇸</span> <span>Español</span>
-          </a>
-            </div>
-          </div>
-
-          <!-- Mobile Menu Toggle Button -->
-          <button id="mobileMenuToggle" class="p-2 rounded-lg text-olive-800 hover:bg-sand-100 focus:outline-none" aria-label="Toggle Navigation">
+        <!-- Mobile Controls (Hamburger Menu Only) -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobileMenuToggle" class="p-2.5 rounded-xl text-olive-900 bg-sand-100 hover:bg-sand-200 border border-sand-300 focus:outline-none" aria-label="Toggle Navigation">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
