@@ -7,16 +7,16 @@
   <meta name="description" content="100% Private holiday domain in Tnine Chtouka, between Casablanca & El Jadida. 2 family suites, 10x5m private pool, authentic Caïdale tent, organic farm animals, 12 min from the Atlantic beach.">
 
   <!-- Canonical & Alternate Hreflang Tags for SEO -->
-  <link rel="canonical" href="https://fermerevedenfance.com/en/">
-  <link rel="alternate" hreflang="fr" href="https://fermerevedenfance.com/fr/">
-  <link rel="alternate" hreflang="ar" href="https://fermerevedenfance.com/ar/">
-  <link rel="alternate" hreflang="en" href="https://fermerevedenfance.com/en/">
-  <link rel="alternate" hreflang="es" href="https://fermerevedenfance.com/es/">
+  <link rel="canonical" href="https://fermerevedenfance.com/en">
+  <link rel="alternate" hreflang="fr" href="https://fermerevedenfance.com/fr">
+  <link rel="alternate" hreflang="ar" href="https://fermerevedenfance.com/ar">
+  <link rel="alternate" hreflang="en" href="https://fermerevedenfance.com/en">
+  <link rel="alternate" hreflang="es" href="https://fermerevedenfance.com/es">
   <link rel="alternate" hreflang="x-default" href="https://fermerevedenfance.com/">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fermerevedenfance.com/en/">
+  <meta property="og:url" content="https://fermerevedenfance.com/en">
   <meta property="og:title" content="Ferme Rêve d'Enfance | Exclusive Private Eco-Retreat in Morocco">
   <meta property="og:description" content="100% Private holiday domain in Tnine Chtouka, between Casablanca & El Jadida. 2 family suites, 10x5m private pool, authentic Caïdale tent, organic farm animals, 12 min from the Atlantic beach.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80">
@@ -101,28 +101,60 @@
 
   <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
   <div class="bg-olive-800 text-sand-100 text-xs py-2.5 px-4 border-b border-olive-700/50">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4">
+    <div class="max-w-7xl mx-auto flex flex-row justify-between items-center gap-2">
+      
+      <!-- Left info badge -->
+      <div class="flex items-center gap-3">
         <span class="flex items-center gap-1.5 font-medium">
           <i data-lucide="map-pin" class="w-3.5 h-3.5 text-terracotta-500"></i>
-          Tnine Chtouka • Casablanca - El Jadida Region
+          <span class="hidden sm:inline">Tnine Chtouka • Casablanca - El Jadida Region</span>
+          <span class="sm:hidden">Tnine Chtouka</span>
         </span>
         <span class="hidden md:inline-block text-olive-600">|</span>
-        <span class="hidden md:flex items-center gap-1.5 text-stone-300">
+        <span class="hidden lg:flex items-center gap-1.5 text-stone-300">
           <i data-lucide="shield-check" class="w-3.5 h-3.5 text-ocean-500"></i>
           100% Exclusive Domain • Complete Privacy
         </span>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="tel:+212661234567" class="flex items-center gap-1.5 hover:text-white transition-colors" dir="ltr">
+
+      <!-- Right Action & Prominent Language Selector -->
+      <div class="flex items-center gap-3">
+        
+        <!-- PROMINENT TOP BAR LANGUAGE SELECTOR -->
+        <div class="relative lang-dropdown-container">
+          <button type="button" class="lang-dropdown-btn inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/15 hover:bg-white/25 text-white text-xs font-semibold border border-white/20 shadow-sm transition-all cursor-pointer" aria-label="Choisir la langue / Select Language">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-terracotta-400"></i>
+            <span class="text-sm">🇬🇧</span>
+            <span class="font-bold">EN</span>
+            <i data-lucide="chevron-down" class="w-3 h-3 text-stone-300"></i>
+          </button>
+          <div class="lang-dropdown-menu absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-2xl border border-sand-200 py-1.5 z-50 text-xs font-medium text-olive-900">
+            
+          <a href="/fr" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇫🇷</span> <span>Français</span>
+          </a>
+          <a href="/ar" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇲🇦</span> <span>العربية</span>
+          </a>
+          <a href="/en" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors font-bold text-terracotta-700 bg-sand-100">
+            <span class="text-base">🇬🇧</span> <span>English</span>
+          </a>
+          <a href="/es" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇪🇸</span> <span>Español</span>
+          </a>
+          </div>
+        </div>
+
+        <a href="tel:+212661234567" class="hidden sm:flex items-center gap-1.5 hover:text-white transition-colors" dir="ltr">
           <i data-lucide="phone" class="w-3.5 h-3.5 text-terracotta-500"></i>
           <span>+212 6 61 23 45 67</span>
         </a>
-        <a href="#reservation" class="flex items-center gap-1 text-terracotta-500 font-semibold hover:underline">
+        <a href="#reservation" class="flex items-center gap-1 text-terracotta-400 font-semibold hover:underline">
           <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
           <span>Check Dates</span>
         </a>
       </div>
+
     </div>
   </div>
 
@@ -160,9 +192,10 @@
         <!-- CTA & Language Dropdown -->
         <div class="hidden sm:flex items-center gap-3">
           
-          <!-- Language Switcher Dropdown (Desktop) -->
+          <!-- Language Switcher Dropdown (Desktop Navbar) -->
           <div class="relative lang-dropdown-container">
-            <button type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-sand-100 hover:bg-sand-200 text-olive-800 text-xs font-semibold border border-sand-300 transition-colors shadow-sm" aria-label="Select Language">
+            <button type="button" class="lang-dropdown-btn inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-sand-100 hover:bg-sand-200 text-olive-800 text-xs font-semibold border border-sand-300 transition-colors shadow-sm cursor-pointer" aria-label="Select Language">
+              <i data-lucide="languages" class="w-3.5 h-3.5 text-terracotta-600"></i>
               <span class="text-sm">🇬🇧</span>
               <span>EN</span>
               <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-stone-500"></i>
@@ -170,16 +203,16 @@
             <div class="lang-dropdown-menu absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-xl border border-sand-200 py-1.5 z-50 text-xs font-medium text-olive-900">
               
           <a href="/fr" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span>🇫🇷</span> <span>Français</span>
+            <span class="text-base">🇫🇷</span> <span>Français</span>
           </a>
           <a href="/ar" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span>🇸🇦</span> <span>العربية</span>
+            <span class="text-base">🇲🇦</span> <span>العربية</span>
           </a>
           <a href="/en" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors font-bold text-terracotta-700 bg-sand-100">
-            <span>🇬🇧</span> <span>English</span>
+            <span class="text-base">🇬🇧</span> <span>English</span>
           </a>
           <a href="/es" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
-            <span>🇪🇸</span> <span>Español</span>
+            <span class="text-base">🇪🇸</span> <span>Español</span>
           </a>
             </div>
           </div>
@@ -190,10 +223,38 @@
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg text-olive-800 hover:bg-sand-100 focus:outline-none" aria-label="Toggle Navigation">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
+        <!-- Mobile Controls (Quick Language Selector + Hamburger Menu) -->
+        <div class="flex items-center gap-2 lg:hidden">
+          
+          <!-- Mobile Header Language Trigger -->
+          <div class="relative lang-dropdown-container">
+            <button type="button" class="lang-dropdown-btn p-2 rounded-lg bg-sand-100 text-olive-900 flex items-center gap-1 text-xs font-bold border border-sand-200 shadow-sm" aria-label="Change language">
+              <span class="text-base">🇬🇧</span>
+              <span>EN</span>
+            </button>
+            <div class="lang-dropdown-menu absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-2xl border border-sand-200 py-1.5 z-50 text-xs font-medium text-olive-900">
+              
+          <a href="/fr" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇫🇷</span> <span>Français</span>
+          </a>
+          <a href="/ar" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇲🇦</span> <span>العربية</span>
+          </a>
+          <a href="/en" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors font-bold text-terracotta-700 bg-sand-100">
+            <span class="text-base">🇬🇧</span> <span>English</span>
+          </a>
+          <a href="/es" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sand-100 transition-colors ">
+            <span class="text-base">🇪🇸</span> <span>Español</span>
+          </a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobileMenuToggle" class="p-2 rounded-lg text-olive-800 hover:bg-sand-100 focus:outline-none" aria-label="Toggle Navigation">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
       </div>
     </div>
   </header>
@@ -214,20 +275,23 @@
 
     <!-- Mobile Language Selector -->
     <div class="px-6 py-3 border-b border-sand-200 bg-sand-100/60">
-      <div class="text-[11px] font-bold text-stone-500 uppercase tracking-wider mb-2">Langue / Language :</div>
+      <div class="text-[11px] font-bold text-stone-500 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+        <i data-lucide="globe" class="w-3.5 h-3.5 text-terracotta-600"></i>
+        <span>Language :</span>
+      </div>
       <div class="grid grid-cols-4 gap-1.5">
         
           <a href="/fr" class="flex-1 py-2 px-2.5 rounded-xl text-center text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-sand-100 text-olive-900 hover:bg-sand-200">
-            <span>🇫🇷</span> <span>FR</span>
+            <span class="text-sm">🇫🇷</span> <span>FR</span>
           </a>
           <a href="/ar" class="flex-1 py-2 px-2.5 rounded-xl text-center text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-sand-100 text-olive-900 hover:bg-sand-200">
-            <span>🇸🇦</span> <span>AR</span>
+            <span class="text-sm">🇲🇦</span> <span>AR</span>
           </a>
           <a href="/en" class="flex-1 py-2 px-2.5 rounded-xl text-center text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-terracotta-600 text-white font-bold shadow-sm">
-            <span>🇬🇧</span> <span>EN</span>
+            <span class="text-sm">🇬🇧</span> <span>EN</span>
           </a>
           <a href="/es" class="flex-1 py-2 px-2.5 rounded-xl text-center text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-sand-100 text-olive-900 hover:bg-sand-200">
-            <span>🇪🇸</span> <span>ES</span>
+            <span class="text-sm">🇪🇸</span> <span>ES</span>
           </a>
       </div>
     </div>
@@ -662,7 +726,7 @@
     </div>
   </section>
 
-  <!-- ==================== PRIVATE POOL (10x5m) ==================== -->
+  <!-- ==================== PRIVATE POOL ==================== -->
   <section id="piscine-tente" class="py-24 bg-olive-900 text-white relative overflow-hidden">
     <div class="absolute inset-0 moroccan-pattern-dark opacity-30"></div>
     
@@ -1133,7 +1197,7 @@
     </div>
   </section>
 
-  <!-- ==================== BEACH & SURROUNDINGS ==================== -->
+  <!-- ==================== BEACH ==================== -->
   <section id="plage" class="py-24 bg-olive-800 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

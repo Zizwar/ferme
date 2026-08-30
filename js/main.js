@@ -281,6 +281,29 @@ ${footer}`;
     });
   });
 
+  // Language Dropdown Click & Touch Handlers
+  const langDropdownContainers = document.querySelectorAll('.lang-dropdown-container');
+  langDropdownContainers.forEach((container) => {
+    const btn = container.querySelector('.lang-dropdown-btn') || container.querySelector('button');
+    const menu = container.querySelector('.lang-dropdown-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        // Close other dropdowns
+        document.querySelectorAll('.lang-dropdown-menu').forEach((m) => {
+          if (m !== menu) m.classList.remove('active');
+        });
+        menu.classList.toggle('active');
+      });
+    }
+  });
+
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.lang-dropdown-menu').forEach((m) => {
+      m.classList.remove('active');
+    });
+  });
+
   // Mobile Menu Drawer
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
