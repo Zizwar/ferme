@@ -58,7 +58,7 @@
 ### 2. HERO SECTION
 - **Main Heading (H1):**
   - FR: *"Là où la Campagne, l'Océan et les Traditions Marocaines se Rencontrent."*
-  - AR: *"حيث تلتقي الطبيعة الريفية، نسيم المحيط، والأصالة المغربية لصناعة أجمل الذكريات."*
+  - AR: *"حينما تلتقي الطبيعة بالبادية، نسيم المحيط، والأصالة المغربية لصناعة أجمل الذكريات."*
   - EN: *"Where Countryside, Ocean Breeze & Moroccan Traditions Meet."*
 - **Subheading:**
   - *"Un havre de paix privatif entre Casablanca et El Jadida. Un lieu unique pour ralentir, se retrouver en famille et faire découvrir aux enfants la magie de la vie rurale dans un cadre authentique et raffiné."*
