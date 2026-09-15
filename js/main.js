@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 ${footer}`;
 
       const encoded = encodeURIComponent(waText);
-      const waUrl = `https://wa.me/212661234567?text=${encoded}`;
+      const waUrl = `https://wa.me/212661476048?text=${encoded}`;
       window.open(waUrl, '_blank');
     });
   }
@@ -254,7 +254,7 @@ ${footer}`;
     floatingWaBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const text = encodeURIComponent(i18n.waGeneral || "Bonjour Ferme Rêve d'Enfance, je souhaiterais des informations sur vos disponibilités.");
-      window.open(`https://wa.me/212661234567?text=${text}`, '_blank');
+      window.open(`https://wa.me/212661476048?text=${text}`, '_blank');
     });
   }
 
